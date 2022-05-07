@@ -29,7 +29,7 @@ export const TEXT_SIZES = {
     lineHeight: "129.3px",
   },
   TEXT_H3: {
-    fontSize: "2.4rem",
+    fontSize: "2.2rem",
     lineHeight: "114.94px",
   },
   TEXT_H4: {
