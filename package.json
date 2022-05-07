@@ -49,6 +49,9 @@
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.16",
     "babel-loader": "^8.2.5",
+    "eslint": "^8.15.0",
+    "eslint-config-wesbos": "^3.0.2",
+    "prettier": "2.6.2",
     "typescript": "^4.6.4"
   }
 }
