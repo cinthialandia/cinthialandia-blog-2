@@ -1,11 +1,12 @@
-const BLACK = "#000000";
+const BLACK = "#030209";
 const WHITE = "#ffffff";
-const PRIMARY_COLOR = "#5F34F7";
-const SECONDARY_COLOR = "#111F58";
-const BACKGROUND_COLOR = "#4F5057";
+const PRIMARY_COLOR = "#E25EAB";
+const SECONDARY_COLOR = "#9E4B7B";
+const DARK_COLOR = "#0E0822";
+const BACKGROUND_COLOR = "#352949";
 const NEUTRAL_COLOR = "#BEC7E2";
-const NEUTRAL_COLOR_DARK = "#7D8CB4";
-const THIRD_COLOR = "#EE571D";
+const NEUTRAL_COLOR_DARK = "#4D3F53";
+const THIRD_COLOR = "#000000";
 
 export const COLORS = {
   BLACK,
@@ -16,4 +17,5 @@ export const COLORS = {
   NEUTRAL_COLOR,
   NEUTRAL_COLOR_DARK,
   THIRD_COLOR,
+  DARK_COLOR,
 };
