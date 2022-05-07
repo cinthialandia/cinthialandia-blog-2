@@ -48,6 +48,7 @@
     "@types/node": "^17.0.31",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.16",
+    "@types/styled-components": "^5.1.25",
     "babel-loader": "^8.2.5",
     "eslint": "^8.15.0",
     "eslint-config-wesbos": "^3.0.2",
