@@ -18,7 +18,7 @@ const ButtonStyle = styled.button<Props>`
   white-space: nowrap;
 `;
 
-export const Button: React.FC<Props> = ({ children, color }) => (
+export const ButtonComponent: React.FC<Props> = ({ children, color }) => (
   <ButtonStyle color={color}>
     <Caption>{children}</Caption>
   </ButtonStyle>

@@ -5,16 +5,16 @@ export const GlobalTypography = createGlobalStyle`
 
 html {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
   }
 }
 @media screen and (min-width: 1000px) {
   html {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 `;
@@ -29,27 +29,23 @@ export const TEXT_SIZES = {
     lineHeight: "129.3px",
   },
   TEXT_H3: {
-    fontSize: "2.2rem",
+    fontSize: "2rem",
     lineHeight: "114.94px",
   },
   TEXT_H4: {
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     lineHeight: "102.17px",
   },
   TEXT_H5: {
-    fontSize: "1.8rem",
+    fontSize: "1.2rem",
     lineHeight: "90.38px",
   },
   TEXT_BODY: {
-    fontSize: "1rem",
+    fontSize: "0.9rem",
     lineHeight: "63.78px",
   },
-  TEXT_SPAN: {
-    fontSize: "0.8rem",
-    lineHeight: "56.7px",
-  },
   TEXT_BUTTON: {
-    fontSize: "0.7rem",
+    fontSize: "0.8rem",
     lineHeight: "39.82px",
   },
 };
@@ -69,6 +65,10 @@ export const TEXT_MIXIN = ({ size, color = "white" }: TextProps) => ({
   fontSize: TEXT_SIZES[size].fontSize,
   // lineHeight: TEXT_SIZES[size].lineHeight,
   // color: COLORS[color],
+  marginBlockStart: "0.6rem",
+  marginBlockEnd: "0.6rem",
+  marginInlineStart: "0px",
+  marginInlineEnd: "0px",
 });
 
 export const H1 = styled.h1<TextComponentProps>`
@@ -91,12 +91,12 @@ export const H5 = styled.h5<TextComponentProps>`
   ${(props) => TEXT_MIXIN({ size: props.size || "TEXT_H5" })}
 `;
 
-export const Paragraph = styled.h6<TextComponentProps>`
+export const Paragraph = styled.p<TextComponentProps>`
   ${(props) => TEXT_MIXIN({ size: props.size || "TEXT_BODY" })}
 `;
 
-export const Span = styled.p<TextComponentProps>`
-  ${(props) => TEXT_MIXIN({ size: props.size || "TEXT_SPAN" })}
+export const Span = styled.span<TextComponentProps>`
+  ${(props) => TEXT_MIXIN({ size: props.size || "TEXT_BODY" })}
 `;
 
 export const Caption = styled.span<TextComponentProps>`

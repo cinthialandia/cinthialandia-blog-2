@@ -1,18 +1,18 @@
 import React from "react";
-import { Button } from "./button";
+import { ButtonComponent } from "./button";
 
 export default {
   title: "Button",
 };
 
 export const PrimaryButtonRose = () => (
-  <Button color="PRIMARY_COLOR">Primary Button</Button>
+  <ButtonComponent color="PRIMARY_COLOR">Primary Button</ButtonComponent>
 );
 
 export const PrimaryButtonSecondary = () => (
-  <Button color="SECONDARY_COLOR">Seconday Button</Button>
+  <ButtonComponent color="SECONDARY_COLOR">Seconday Button</ButtonComponent>
 );
 
 export const PrimaryButtonDark = () => (
-  <Button color="DARK_COLOR">Dark Button</Button>
+  <ButtonComponent color="DARK_COLOR">Dark Button</ButtonComponent>
 );
